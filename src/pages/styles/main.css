@@ -1,0 +1,28 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Container .Pages a {
+    color: violet;
+    transition: 0.3s;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.Container .Pages a:hover {
+    color: #c7c6f5;
+}
+
+.Sign {
+    position: absolute;
+    z-index: 999;
+    bottom: 2vh;
+}

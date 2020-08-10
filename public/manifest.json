@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "graphics",
+  "name": "3d graphics with react-three-fiber",
   "icons": [
     {
       "src": "favicon.ico",
