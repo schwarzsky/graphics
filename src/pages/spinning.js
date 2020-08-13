@@ -43,18 +43,20 @@ function Torusses(){
     const TorusGeometry10 = useRef(null);
     const TorusGeometry11 = useRef(null);
 
-    useFrame(() => {
-        TorusGeometry1.current.rotation.z = TorusGeometry1.current.rotation.z += 0.10;
-        TorusGeometry2.current.rotation.z = TorusGeometry2.current.rotation.z += 0.09;
-        TorusGeometry3.current.rotation.z = TorusGeometry3.current.rotation.z += 0.08;
-        TorusGeometry4.current.rotation.z = TorusGeometry4.current.rotation.z += 0.07;
-        TorusGeometry5.current.rotation.z = TorusGeometry5.current.rotation.z += 0.06;
-        TorusGeometry6.current.rotation.z = TorusGeometry6.current.rotation.z += 0.05;
-        TorusGeometry7.current.rotation.z = TorusGeometry7.current.rotation.z += 0.04;
-        TorusGeometry8.current.rotation.z = TorusGeometry8.current.rotation.z += 0.03;
-        TorusGeometry9.current.rotation.z = TorusGeometry9.current.rotation.z += 0.02;
-        TorusGeometry10.current.rotation.z = TorusGeometry10.current.rotation.z += 0.01;
-        TorusGeometry11.current.rotation.z = TorusGeometry11.current.rotation.z += 0.01;
+    const Torusses = [TorusGeometry1, TorusGeometry2, TorusGeometry3, TorusGeometry4, TorusGeometry5, TorusGeometry6, TorusGeometry7, TorusGeometry8, TorusGeometry9, TorusGeometry10, TorusGeometry11];
+
+    useFrame(({clock}) => {
+        var i = 0.01;
+
+        Torusses.forEach((torus, index) => {
+            torus.current.rotation.z = Math.sin(clock.getElapsedTime()) * Math.PI/4 * index;
+
+            i += 1;
+
+            if(i = 11){
+                i = 0;
+            }
+        });     
       });
 
     return(

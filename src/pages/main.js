@@ -9,6 +9,7 @@ const Main = () => {
         <div className='Container'>
             <section className='Pages'>
                 <Link to={'/spinning'}>Glowing</Link>
+                <Link to={'/basic-character'}>Character with physics</Link>
             </section>
             <section className='Sign'>
                 made by schwarzsky, published at <a href='https://github.com/schwarzsky/graphics'>github</a>

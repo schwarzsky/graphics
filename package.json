@@ -8,12 +8,15 @@
     "@testing-library/user-event": "^7.1.2",
     "drei": "0.0.72",
     "list-react-files": "^0.2.0",
+    "postprocessing": "^6.16.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-postprocessing": "^1.1.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-three-fiber": "^4.2.20",
-    "three": "^0.119.1"
+    "three": "^0.119.1",
+    "use-cannon": "^0.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

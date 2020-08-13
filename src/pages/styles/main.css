@@ -21,6 +21,13 @@
     color: #c7c6f5;
 }
 
+.Container .Pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .Sign {
     position: absolute;
     z-index: 999;

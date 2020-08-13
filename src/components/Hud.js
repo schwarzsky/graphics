@@ -1,11 +1,17 @@
+import React from 'react';
+
 import './styles/hud.css';
 
-import GitHub from './icons/github'
+import {BrowserRouter as Router, withRouter, Link} from 'react-router-dom';
 
 const Hud = () => {
     return(
-        <div>
-            <GitHub style={{color: 'white'}} />
+        <div className='Hud'>
+          <section className='HudContainer'>
+            <Link to={this.history.go}>go back</Link>
+          </section>  
         </div>
     )
 }
+
+export default withRouter(Hud);
