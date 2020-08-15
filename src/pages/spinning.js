@@ -45,7 +45,7 @@ function Torusses(props){
         {Array(count)
             .fill()
             .map((item, i) => (
-                <Torus key={i} args={[10, 0.1]} position={[0, 0, (i + 1) * -5]} />
+                <Torus key={i} args={[10, 0.1]} position={[0, 0, (i + 1) * -5.1]} />
             ))}
     </group>);
 }

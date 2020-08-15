@@ -2,7 +2,7 @@ import React, {Suspense} from 'react';
 import {Canvas} from 'react-three-fiber';
 
 import {usePlane, Physics} from 'use-cannon';
-import { softShadows, OrbitControls } from 'drei';
+import {softShadows, OrbitControls} from 'drei';
 
 import Character from '../models/character';
 import './styles/basic-character.css';

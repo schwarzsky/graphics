@@ -7,7 +7,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "drei": "0.0.72",
-    "history": "^5.0.0",
     "list-react-files": "^0.2.0",
     "postprocessing": "^6.16.0",
     "react": "^16.13.1",
